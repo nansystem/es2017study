@@ -7,6 +7,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "webpack": "^4.9.1",
     "webpack-cli": "^2.1.4",
@@ -15,5 +16,8 @@
   "serve": {
     "open": true
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  }
 }

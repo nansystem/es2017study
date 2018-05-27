@@ -1,15 +1,4 @@
-function readonly(target, name, descriptor) {
-    descriptor.writable = false;
-    return descriptor;
-}
+import 'babel-polyfill';
+import spread from './spread'
 
-class Example {
-    a() { }
-    @readonly
-    b() { }
-}
-
-const e = new Example();
-e.a = 1;
-e.b = 2;
-console.log(e)
+spread()

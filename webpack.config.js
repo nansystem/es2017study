@@ -29,9 +29,9 @@ module.exports = {
                 // env を指定することで、ES2017 を ES5 に変換。
                 // {modules: false}にしないと import 文が Babel によって CommonJS に変換され、
                 // webpack の Tree Shaking 機能が使えない
-                ['env', { 'modules': false }]
+                ['env', { 'modules': false, "useBuiltIns": true }]
               ],
-              "plugins": ["transform-decorators-legacy"]
+              "plugins": ["transform-decorators-legacy", "transform-object-rest-spread"]
             }
           }
         ]
