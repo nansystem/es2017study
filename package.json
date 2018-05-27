@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-serve"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-serve": "^1.0.2"
+  },
+  "serve": {
+    "open": true
+  },
+  "private": true
+}
