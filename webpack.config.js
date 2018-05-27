@@ -30,7 +30,8 @@ module.exports = {
                 // {modules: false}にしないと import 文が Babel によって CommonJS に変換され、
                 // webpack の Tree Shaking 機能が使えない
                 ['env', { 'modules': false }]
-              ]
+              ],
+              "plugins": ["transform-decorators-legacy"]
             }
           }
         ]
